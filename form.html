@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .body {
+           border: 1px solid black;
+            text-align: center;
+            margin: 5rem 10rem;
+            padding: 0 15rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="post.php" method="post" enctype="multipart/form-data">
+        <div class="body">
+            <h1>Cours Formulaire</h1>
+            <input class="form-control" type="text" placeholder="Titre de cour" aria-label="default input example" name="titre"><br>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Fichier du cour</label>
+                <input class="form-control" type="file" id="formFile" name="lien">
+            </div><br>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">logo du cour</label>
+                <input class="form-control" type="file" id="formFile" name="test">
+            </div><br>
+            <select name="module" id="" class="form-select" aria-label="Selectionner Module">
+                <option value=1>DAI</option>
+                <option value=2>CAI</option>
+                <option value="3">MATH</option>
+                <option value="4">ARABE</option>
+                <option value="5">ANGLAIS</option>
+                <option value="6">FRANCAIS</option>
+                <option value="7">TEC</option>
+            </select><br>
+            <button class="btn btn-primary" type="submit">Enregistrer</button>
+        </div>
+    </form>
+</body>
+</html>
